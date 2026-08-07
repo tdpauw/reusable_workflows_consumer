@@ -13,5 +13,3 @@ jobs:
   pipeline:
     uses: tdpauw/reusable_workflows/.github/workflows/pipeline.yml@main
     secrets: inherit
-    with:
-      final_environment: development
