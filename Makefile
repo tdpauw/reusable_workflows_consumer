@@ -13,7 +13,7 @@ install: ## Installs dependencies
 	@echo "Installing dependencies"
 
 test: install ## Executes unit tests
-	@echo "Executing tests"
+	@echo "Executing tests against version $(version)"
 
 build: clean install compile test ## Builds
 	@if [[ -z "${version}" ]]; then echo "version must be provided"; false; fi;
